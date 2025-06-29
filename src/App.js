@@ -18,13 +18,8 @@ const App = () => {
     setTodos(move);
   };
 
-  // const onDragEnd = ({ source, destination, draggableId }) => {
-  //   if (!destination || destination.droppableId === source.droppableId) return;
-  //   moveTodo(Number(draggableId), destination.droppableId);
-  // };
-
   const onDragEnd = (result) => {
-    const { source, destination, draggableId } = result;
+    const { destination, draggableId } = result;
 
     if (!destination) return;
 

@@ -12,6 +12,7 @@ const Column = ({ title, status, todos, onAdd, onMove }) => {
         <h2>{title}</h2>
         {status === "New" && (
           <img
+            alt="add"
             onClick={() => setModalOpen(true)}
             src="add.png"
             height="40px"
